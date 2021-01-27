@@ -3,11 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './views/App';
 import reportWebVitals from './reportWebVitals';
+import Register from './views/register';
+import Login from './views/login';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
+
+
+const Root = () => {
+  return (
+      <Router>
+        <Switch>
+          <Route exact path='/' component={App} />
+          <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
+
+        </Switch>
+      </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
     <div className='color'>
-    <App />
+    <Root />
     </div>
   </React.StrictMode>,
   document.getElementById('root')
