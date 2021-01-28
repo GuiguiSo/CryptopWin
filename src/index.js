@@ -5,6 +5,7 @@ import App from './views/App';
 import reportWebVitals from './reportWebVitals';
 import Register from './views/register';
 import Login from './views/login';
+import Dashboard from './views/dashboard'
 
 import {
   BrowserRouter as Router,
@@ -20,7 +21,7 @@ const Root = () => {
           <Route exact path='/' component={App} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
-
+          <Route exact path='/dashboard' component={Dashboard}/>
         </Switch>
       </Router>
   )

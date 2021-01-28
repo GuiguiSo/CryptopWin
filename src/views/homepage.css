@@ -28,8 +28,17 @@
 }
 
 .card {
-    border-radius: 50px !important;
+    border-radius: 10px !important;
 }
 .center{
     text-align: center;
+}
+
+.raddash{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.buttondash{
+    padding-left: 30px !important;
 }
