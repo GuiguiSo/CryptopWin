@@ -14,5 +14,9 @@ code {
 
 .color{
   background-color: #0A0A2A;
-  height: 100%;
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
 }
+

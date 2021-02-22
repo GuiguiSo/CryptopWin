@@ -1,26 +1,31 @@
-.bg{
+.bg {
     background-color: grey;
 }
 
 .colpad {
-    padding : 0px !important;
-} 
+    padding: 0px !important;
+}
 
-.danger{
-
+.danger {
     margin-top: 50%!important;
 }
-.o{
+
+.o {
     padding: 200px;
 }
-.formuregi{
+
+.padding20 {
+    padding-top: 20px;
+}
+
+.formuregi {
     padding-top: 200px;
     padding-bottom: 450px;
     padding-right: 50px;
     padding-left: 50px;
 }
 
-.padlog{
+.padlog {
     padding-top: 21rem;
     padding-bottom: 450px;
     padding-right: 50px;
@@ -30,15 +35,53 @@
 .card {
     border-radius: 10px !important;
 }
-.center{
+
+.center {
     text-align: center;
 }
 
-.raddash{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.left {
+    text-align: left;
 }
 
-.buttondash{
-    padding-left: 30px !important;
+.right {
+    text-align: right;
+}
+
+.raddash {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.img-radius {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.cardtest:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 8000px) {
+    .raddash {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+    }
+    .butdash {
+        text-align: center;
+    }
+    .img-responsive {
+        max-width: 100%!important;
+    }
+    .padlog {
+        padding: 10px;
+    }
+    .img-radius-media {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
 }

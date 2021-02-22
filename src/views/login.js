@@ -65,7 +65,7 @@ class Login extends React.Component {
                 <div className="container padlog">
                     <div className="row">
                         <div className="col-3"></div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-10">
                             <div className="card mb-5">
                                 <form className='m-5'>
                                     <div className="form-group">

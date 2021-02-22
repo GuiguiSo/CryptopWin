@@ -7,23 +7,23 @@ import '../views/homepage.css'
 class Carboard extends React.Component {
     render() {
         return (
-            <div className="row">
-                <div className="offset-1 col-10 ">
-                    <div className="card-group">
-                        <div className="card">
-                            <div className="row">
-                                <div className='col-3'>
+            <div className="row" >
+                <div className="offset-1 col-10 padding20" >
+                    <div className="card-group cardtest" >
+                        <div className="card sm-mt-4" >
+                            <div className="row" >
+                                <div className='col-md-3 col-sm-10 margintopcard' >
                                     <img src="https://via.placeholder.com/350x100" className="raddash" alt="yes" />
                                 </div>
-                                <div className='col-2'>
-                                    <p>blop</p>
+                                <div className='col-md-2' >
+                                    <p> blop </p>
                                 </div>
-                                <div className="col-3">
+                                <div className="col-md-3">
 
                                 </div>
-                                <div className="col-4">
-                                <button type="button" class="btn btn-outline-primary buttondash">Primary</button>
-                                    
+                                <div className="col-md-4 right butdash" >
+                                    <button type="button" class="btn btn-outline-primary btn-lg butdash " > Primary </button>
+
                                 </div>
                             </div>
                         </div>
