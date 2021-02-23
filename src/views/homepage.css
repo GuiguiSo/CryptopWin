@@ -1,7 +1,3 @@
-.bg {
-    background-color: grey;
-}
-
 .colpad {
     padding: 0px !important;
 }
@@ -23,11 +19,11 @@
     padding-bottom: 450px;
     padding-right: 50px;
     padding-left: 50px;
+    text-align: center;
 }
 
 .padlog {
-    padding-top: 21rem;
-    padding-bottom: 450px;
+
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -48,13 +44,7 @@
     text-align: right;
 }
 
-.raddash {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
+
 
 .img-radius {
     border-top-left-radius: 10px !important;
@@ -64,24 +54,38 @@
 .cardtest:hover {
     transform: scale(1.05);
 }
+.butdash {
+    text-align: center;
+}
 
-@media screen and (max-width: 8000px) {
-    .raddash {
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-        text-align: center !important;
-    }
+@media screen and (max-width: 1300px) {
+
     .butdash {
         text-align: center;
+        
     }
     .img-responsive {
         max-width: 100%!important;
     }
     .padlog {
-        padding: 10px;
+        padding-top: 30%;
     }
     .img-radius-media {
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
+    .table thead {
+        display: none;
+        }
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .padlog {
+        padding-top: 40%;
+    }
+
+
 }

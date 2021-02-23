@@ -22,7 +22,7 @@ class Navbar extends React.Component {
                                         <Link className="nav-link mr-5 active" to="/"> Home </Link>
                                         <Link className="nav-link mr-5 active" to="/login"> Login </Link>
                                         <Link className="nav-link mr-5 active" to="/register"> Register </Link>
-                                        <Link className="nav-link mr-5 active" to="/dashboard"> DashBoard </Link>
+                                        <Link className="nav-link mr-5 active" to="/global"> Global </Link>
                                         
                                     </div>
                                 </div>

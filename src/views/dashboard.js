@@ -5,7 +5,7 @@ import Navbar from '../Components/navbar'
 import Carboard from '../Components/card-dashboard'
 
 
-class Dashboard extends React.Component {
+class Global extends React.Component {
     render() {
         return (
             <div className="container-fluid">
@@ -24,4 +24,4 @@ class Dashboard extends React.Component {
     }
 }
 
-export default Dashboard;
+export default Global;

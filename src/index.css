@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0A0A2A !important;
 }
 
 code {
@@ -12,11 +13,4 @@ code {
     monospace;
 }
 
-.color{
-  background-color: #0A0A2A;
-  top: 0; 
-  left: 0; 
-  min-width: 100%;
-  min-height: 100%;
-}
 

@@ -1,0 +1,54 @@
+.raddash {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+ 
+
+}
+.divbutdash{
+    text-align: center !important;
+}
+.butdash {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    vertical-align: middle !important;
+    
+
+}
+
+/*Pour les tablettes*/
+
+@media screen and (max-width: 768px) {
+    .raddash {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+
+    }
+    .divbutdash{
+        text-align: center !important;
+    }
+    .textdash {
+        text-align: center;
+    }
+
+}
+
+/*Pour les Smartphone*/
+@media screen and (max-width: 600px) {
+    .raddash {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+
+    }
+
+    .textdash {
+        text-align: center;
+    }
+    .divbutdash{
+        text-align: center !important;
+    }
+
+}
