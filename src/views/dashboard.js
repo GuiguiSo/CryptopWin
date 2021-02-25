@@ -11,13 +11,7 @@ class Global extends React.Component {
             <div className="container-fluid">
                 <Navbar></Navbar>
                 <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
-                <Carboard></Carboard>
+ 
 
             </div>
         );

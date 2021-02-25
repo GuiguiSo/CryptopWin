@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Register from './views/register';
 import Login from './views/login';
 import Global from './views/dashboard'
+import Viewcard from './views/view_card'
 
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ const Root = () => {
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/global' component={Global}/>
+          <Route exact path='/viewcard' component={Viewcard}/>
         </Switch>
       </Router>
   )
@@ -29,7 +31,7 @@ const Root = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className='color'>
+    <div className='color1 color2'>
     <Root />
     </div>
   </React.StrictMode>,

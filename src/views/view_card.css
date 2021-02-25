@@ -1,0 +1,132 @@
+.imgcardview-1{
+    width: 30rem;
+    height: 30rem;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.forme1{
+    position:fixed;
+    width: 200rem;
+}
+.forme2{
+    position: fixed;
+    width: 30rem;
+
+}
+
+.btn-primary{
+    background-color: #0A0A2A;
+}
+
+.btn-lg{
+    padding: .5rem 10rem;
+}
+
+.btn-primary{
+    border-color: #0A0A2A;
+}
+.btn-primary:hover{
+
+    border-color: white;
+    background-color: #ffc0cb;
+    text-decoration: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+
+    border-color: white;
+    background-color: #ffc0cb;
+    text-decoration: none;
+}
+
+.btn-primary:focus{
+    background-color: #ffc0cb;
+    border-color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .imgcardview-1 {
+        width: 20rem;
+        height: 20rem;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+        
+
+    }
+    .btn-lg{
+        padding: .5rem 5rem;
+    }
+    .btn-primary{
+        background-color: #0A0A2A;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .imgcardview-1 {
+        width: 24.56rem;
+        height: 10rem;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+
+    }
+
+
+}
+
+/*Pour les Smartphone*/
+@media screen and (max-width: 578px) {
+    .imgcardview-1 {
+        width: 26rem;
+        height: 10rem;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        text-align: center !important;
+
+    }
+
+
+}

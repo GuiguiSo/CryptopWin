@@ -6,14 +6,17 @@ import { Link } from 'react-router-dom'
 import imgfront from '../img/Wavy_Bus-29_Single-02.png'
 import Carboard from '../Components/card-dashboard'
 import Cardhome from '../Components/card_homepage'
-import '../index.css'
+import right from '../img/arrow-icon-black-23.png'
+import left from '../img/arrow-icon-blac_leftpng.png'
+
+
 
 class Homepage extends React.Component {
   render() {
     return (
       <div className="container-fluid">
         <Navbar></Navbar>
-        <div className="container text-danger">
+        <div className="container pink">
           <div className="row ">
             <div className="col-6 catchtext">
               <h1 className="danger">Bienvenue sur CasinoSafeGame</h1>
@@ -23,7 +26,7 @@ class Homepage extends React.Component {
             </div>
           </div>
         </div>
-        <div id="carouselExampleIndicators" className="carousel slide b-5" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide pl-5 pr-4" data-bs-ride="carousel">
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -36,8 +39,7 @@ class Homepage extends React.Component {
                 <Cardhome />
                 <Cardhome />
                 <Cardhome />
-                <Cardhome />
-                <Cardhome />
+
 
               </div>
             </div>
@@ -47,8 +49,7 @@ class Homepage extends React.Component {
                 <Cardhome></Cardhome>
                 <Cardhome></Cardhome>
                 <Cardhome></Cardhome>
-                <Cardhome></Cardhome>
-                <Cardhome></Cardhome>
+
               </div>
             </div>
             <div className="carousel-item">
@@ -57,29 +58,17 @@ class Homepage extends React.Component {
                 <Cardhome></Cardhome>
                 <Cardhome></Cardhome>
                 <Cardhome></Cardhome>
-                <Cardhome></Cardhome>
-                <Cardhome></Cardhome>
+
               </div>
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
+          <img src={left} class="visually-hidden carouleft" alt=""/>
           </a>
           <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            <img src={right} class="visually-hidden carouright" alt=""/>
           </a>
         </div>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-        <Carboard></Carboard>
-
-
       </div>
 
 
