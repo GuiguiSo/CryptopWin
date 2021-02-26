@@ -98,9 +98,9 @@ class Register extends React.Component {
                         </thead>
                         <tbody>
                             {
-                                this.state.users.map((user, i) => {
+                                this.state.users.map((user) => {
                                     return (
-                                        <tr key={i}>
+                                        <tr>
                                             <th scope="row" >{user._id}</th>
                                             <td className='center'>{user.email}</td>
                                             <td className='center'>{user.password}</td>

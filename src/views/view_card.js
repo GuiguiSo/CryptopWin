@@ -3,10 +3,41 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './view_card.css'
 import Navbar from '../Components/navbar'
 import img from '../img/Wavy_Bus-29_Single-02.jpg'
+import * as fromApi from '../utils/api'
 
 
 class Viewcard extends React.Component {
+
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            casinos: []
+        }
+    }
+
+
+    async componentDidMount() {
+        this.getCasinos()
+
+
+    }
+    async getCasinos() {
+        const casinos = await fromApi.getCasinos()
+        this.setState({
+            casinos: casinos
+        })
+    }
+
+
+
+
+
+
     render() {
+    
+
         return (
             <div>
             <Navbar></Navbar>
@@ -19,9 +50,9 @@ class Viewcard extends React.Component {
                 </svg>
                 <div className="container mt-5">
                     <div className="card center bg-dark">
-                        <img src={img} class="card-img-top" className='m-5' alt="Accroche HTML" />
+                        <img src={img} className='m-2 card-img' style={{width: "rem"}} alt="Accroche HTML" />
                         <div className="card-body">
-                            <h2 className="card-title">Gambling</h2>
+                            <h2 className="card-title"></h2>
                             <h3 className="card-subtitle">Sous titre</h3>
                             <p className="card-text">Du texte sous le titre dans le corps de carte</p>
                             <a href="#" className="btn-lg btn-primary pink ">Un lien</a>

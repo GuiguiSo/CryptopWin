@@ -31,7 +31,7 @@ const Root = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className='color1 color2'>
+    <div className='color1 color'>
     <Root />
     </div>
   </React.StrictMode>,

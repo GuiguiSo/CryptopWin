@@ -2,21 +2,59 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../views/homepage.css'
 import { Link } from 'react-router-dom'
+import * as fromApi from '../utils/api'
+import logo from '../img/Crypto/Binance-banniere-1.jpg'
 
 
 class Cardhome extends React.Component {
+
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            casinos: []
+        }
+    }
+
+
+    async componentDidMount() {
+        this.getCasinos()
+
+
+    }
+    async getCasinos() {
+        const casinos = await fromApi.getCasinos()
+        this.setState({
+            casinos: casinos
+        })
+    }
+    
     render() {
         return (
-            <Link className="offset-sm-1col-sm-10 col-md-3 cardtest padlog text-light" to="/viewcard">
-                <div className="card bg-dark" >
-                    <img className="card-img-top img-radius img-radius-media" src="https://via.placeholder.com/150x150" alt="" />
-                    <div className="card-body" >
-                        <p className="card-text" > Some quick example text to build on the card title and make up the bulk of the card 's content.</p>
-                    </div>
-                </div>
-            </Link>
-
-        );
-    }
+            <div className="card-group col-12">
+                {
+                    
+                
+                    this.state.casinos.sort(() => Math.random() -0.5).slice(0, 4).map(casino => {
+                        return (
+                            <div>
+                                <Link className="padlog text-light" to={`/${casino._id}`}>
+                                    <div class="card card-test bg-dark mr-3" style={{width: '25rem'}}>
+                                        <img class="card-img-top" src={logo} alt="Card image cap"/>
+                                            <div class="card-body center d-flex flex-column ">
+                                                <h5 class="card-title">{casino.name}</h5>
+                                                <p class="card-text ">{casino.description}</p>
+                                                <a href="#" class="card-btn btn-primary mt-auto btn-block ">Voir plus</a>
+                                            </div>    
+                                    </div> 
+                                </Link>
+                            </div>
+                        )
+                    })
+                }
+                            </div>
+                        );
+                    }
 }
 export default Cardhome;

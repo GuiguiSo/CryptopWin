@@ -42,6 +42,7 @@
 .pink{
     color:pink;
 }
+
 .padlog:hover {
 
     text-decoration: none;
@@ -65,6 +66,11 @@
 }
 
 
+.img-responsive{
+    width: 30rem;
+    margin-bottom: 3.5rem;
+
+}
 
 .img-radius {
     border-top-left-radius: 10px !important;
@@ -102,6 +108,13 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .card-test{
+    height: 17rem;
+}
+  .card-btn{
+  border-radius: 10px;
+  width: 100px;
+    }
 
 @media screen and (max-width: 1300px) {
 
