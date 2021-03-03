@@ -45,9 +45,9 @@ class Cardhome extends React.Component {
                                     <div class="card-body center d-flex flex-column ">
                                         <h5 class="card-title mb-md-4 mb-sm-2">{casino.name}</h5>
                                         <p class="card-text">{casino.description}</p>
-                                        <p class="card-text">Si vous clique sur le lien</p>
+                                        <p class="card-text">Si vous cliquez sur le lien</p>
                                         <Link className=" " to={`viewcard/${casino._id}`}>
-                                            <button className="btn-primary btn mt-md-4 mt-sm-3" style={{ width: '15rem' }}>BONUS</button>
+                                            <button className="btn-primary btn mt-4" style={{ width: '10rem' }}>BONUS</button>
                                         </Link>
                                     </div>
                                 </div>
