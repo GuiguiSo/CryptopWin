@@ -19,42 +19,45 @@ class Cardhome extends React.Component {
 
 
     async componentDidMount() {
-        this.getCasinos()
+        this.getCasinosid()
 
 
     }
-    async getCasinos() {
+    async getCasinosid() {
         const casinos = await fromApi.getCasinos()
         this.setState({
             casinos: casinos
         })
     }
-    
+
     render() {
         return (
-            <div className="card-group col-12">
+            <div className="card-deck mt-auto">
                 {
-                    
-                
-                    this.state.casinos.sort(() => Math.random() -0.5).slice(0, 4).map(casino => {
+
+
+                    this.state.casinos.sort(() => Math.random() - 0.5).slice(0, 4).map(casino => {
                         return (
-                            <div>
-                                <Link className="padlog text-light" to={`/${casino._id}`}>
-                                    <div class="card card-test bg-dark mr-3" style={{width: '25rem'}}>
-                                        <img class="card-img-top" src={logo} alt="Card image cap"/>
-                                            <div class="card-body center d-flex flex-column ">
-                                                <h5 class="card-title">{casino.name}</h5>
-                                                <p class="card-text ">{casino.description}</p>
-                                                <a href="#" class="card-btn btn-primary mt-auto btn-block ">Voir plus</a>
-                                            </div>    
-                                    </div> 
-                                </Link>
+                            <div className="col-md-3 col-sm-12 mb-5">
+
+                                <div class="card card-test bg-dark cardtest text-light" >
+                                    <img class="card-img-top" src={logo} alt="Card image cap" />
+                                    <div class="card-body center d-flex flex-column ">
+                                        <h5 class="card-title mb-md-4 mb-sm-2">{casino.name}</h5>
+                                        <p class="card-text">{casino.description}</p>
+                                        <p class="card-text">Si vous clique sur le lien</p>
+                                        <Link className=" " to={`viewcard/${casino._id}`}>
+                                            <button className="btn-primary btn mt-md-4 mt-sm-3" style={{ width: '15rem' }}>BONUS</button>
+                                        </Link>
+                                    </div>
+                                </div>
+
                             </div>
                         )
                     })
                 }
-                            </div>
-                        );
-                    }
+            </div>
+        );
+    }
 }
 export default Cardhome;

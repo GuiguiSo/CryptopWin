@@ -28,11 +28,4 @@ export const getCasinos = async () => {
     return casinos
 }   
 
-export const getCasinosid = async () => {
-    let response = await fetch('http://localhost:3001/casinos/:id', {
-        method:'GET'
-    })
-    let casinos = response.json()
-    return casinos
-}   
 

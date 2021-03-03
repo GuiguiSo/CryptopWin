@@ -1,7 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
-import * as fromApi from '../utils/api'
 
 
 class Navbar extends React.Component {
@@ -21,7 +20,7 @@ class Navbar extends React.Component {
                                     <div class="navbar-nav mr-5">
                                         <Link className="nav-link mr-5 active" to="/login"> Login </Link>
                                         <Link className="nav-link mr-5 active" to="/register"> Register </Link>
-                                        <Link className="nav-link mr-5 active" to="/global"> Global </Link>
+                                        <Link className="nav-link mr-5 active" to="/global"> All </Link>
 
                                     </div>
                                 </div>

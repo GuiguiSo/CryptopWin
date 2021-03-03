@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom'
 import logo1 from '../img/Crypto/crypto-com.png'
 
 
+
 class Carboard extends React.Component {
 
     constructor(props) {
         super(props)
+
 
         this.state = {
             casinos: []
@@ -41,12 +43,12 @@ class Carboard extends React.Component {
                 </svg>
 
                 {
-                    this.state.casinos.sort(() => Math.random() -0.5).slice(0, 4).map(casino  => {
+                    this.state.casinos.map(casino  => {
                         return (
 
                             <div className="row" >
                                 <div className="offset-md-1 col-md-10 col-sm-12 padding20 mt-3" >
-                                    <div className="card sm-mt-4 bg-dark" >
+                                    <div className="card sm-mt-4 bg-dark cardtest" >
                                         <div className="row" >
                                             <div className='col-sm-5' >
                                                 <img src={logo1} className="raddash card-img" alt="yes" />
@@ -56,8 +58,8 @@ class Carboard extends React.Component {
                                                     <h1 class="card-title">{casino.name}</h1>
                                                     <h2 class="card-text">{casino.description}</h2>
                                                     <div className="mt-2">
-                                                        <Link to={`/${casino._id}`} >
-                                                            <button className="btn-primary btn-lg ">BONUS</button>
+                                                        <Link to={`viewcard/?id=${casino._id}`} >
+                                                            <button className="btn-primary btn-lg">BONUS</button>
                                                         </Link>
                                                     </div>
                                                 </div>

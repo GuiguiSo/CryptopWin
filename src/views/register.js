@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './homepage.css'
 import * as fromApi from '../utils/api'
 import Navbar from '../Components/navbar'
-import { Link } from 'react-router-dom'
 
 class Register extends React.Component {
 

@@ -80,41 +80,20 @@
 .cardtest:hover {
     transform: scale(1.05);
 }
-.col-md-3{
-    display: inline-block;
-    margin-left:-4px;
-  }
-  .col-md-3 img{
-    width:100%;
-    height:auto;
-  }
-  body .carousel-indicators li{
-    background-color:pink;
-    
-  }
-  .carousel-control-next{
-      width: 30px !important;
 
-  }
-  .carousel-control-prev{
-    width: 30px !important;
-
-}
-  body .carousel-control-prev-icon,
-  body .carousel-control-next-icon{
-    background-color:pink;
-  }
   body .no-padding{
     padding-left: 0;
     padding-right: 0;
   }
   .card-test{
-    height: 17rem;
+    height: 20rem;
 }
   .card-btn{
   border-radius: 10px;
   width: 100px;
     }
+
+
 
 @media screen and (max-width: 1300px) {
 

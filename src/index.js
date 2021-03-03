@@ -23,7 +23,7 @@ const Root = () => {
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/global' component={Global}/>
-          <Route exact path='/viewcard' component={Viewcard}/>
+          <Viewcard path="/viewcard" ></Viewcard>
         </Switch>
       </Router>
   )
